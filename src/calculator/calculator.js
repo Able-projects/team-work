@@ -1,32 +1,35 @@
 import './calculator.css'
+import Nav from '../components/Nav'
 
 function Calculator() {
     function insert(num) {
-        document.form.textview.value = 
-        document.form.textview.value + num;
+        document.form.textview.value =
+            document.form.textview.value + num;
     }
-    
+
     function clean() {
         document.form.textview.value = ''
     }
-    
+
     function back() {
         let exp = document.form.textview.value;
-        document.form.textview.value = exp.substring(0,exp.length-1)
+        document.form.textview.value = exp.substring(0, exp.length - 1)
     }
-    
+
     function equal() {
         let exp = document.form.textview.value;
         if (exp) (
+            // eslint-disable-next-line
             document.form.textview.value = eval(exp)
         )
     }
-    return(
+    return (
         <div>
+            <Nav />
             <div className="container">
                 <div className="item input">
                     <form name="form">
-                        <input type="text" name="textview" readonly/>
+                        <input type="text" name="textview" readonly />
                     </form>
                 </div>
                 <div className="item clean" onClick={() => clean()}>C</div>
