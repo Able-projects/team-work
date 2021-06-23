@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.toApp {
+  text-align: center;
+  margin: 10px auto;
+  width: 400px;
+  height: 400px;
+  /* background-color: rgb(217, 211, 240); */
+}
+
+.inputSection {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+.todoApp input {
+  margin-top: 20px;
+  width: 320px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px grey solid;
+  outline: none;
+  font-size: 16px;
+}
+
+.inputSection button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px grey solid;
+  background-color: white;
+}
+
+.listItem {
+  background-color: #008cff;
+  color: white;
+  font-size: 16px;
+  width: 80%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btnRemove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.todoApp h2 {
+  font-weight: 400;
+}
+
+.item {
+  width: 82%;
+  margin: 10px auto;
+  text-align: right;
+}
