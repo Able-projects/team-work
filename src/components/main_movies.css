@@ -1,0 +1,94 @@
+.main_movies {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+  background: rgba(53, 75, 110, 0.3);
+  font-family: "Times New Roman", Times, serif;
+}
+.main_movies h2 {
+  text-align: center;
+  margin: auto;
+  padding: 40px 20px;
+  font-weight: 700;
+  font-size: 36px;
+  color: bisque;
+}
+.image_movies {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+}
+.image_movies img {
+  width: 25%;
+}
+.tutotial_movies {
+  width: 45%;
+  margin: auto;
+}
+.tutotial_movies h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  color: burlywood;
+}
+.tutotial_movies h4,
+.tutotial_movies h5 {
+  margin: 15px 35px;
+  text-indent: 10px;
+  line-height: 110%;
+  color: bisque;
+}
+.tutotial_movies h4 {
+  font-size: 20px;
+}
+.tutotial_movies h5 {
+  font-size: 16px;
+  letter-spacing: 0.08rem;
+  color: burlywood;
+}
+.tutotial_movies a {
+  text-decoration: none;
+  color: rgb(196, 255, 228);
+}
+.tutotial_movies a:hover {
+  text-decoration: none;
+  color: rgb(196, 255, 232);
+}
+.tutotial_movies span {
+  font-style: italic;
+  color: violet;
+}
+
+@media (max-width: 1420px) {
+  .image_movies {
+    width: 90%;
+  }
+  .tutotial_movies {
+    width: 60%;
+  }
+  .main_movies {
+    height: auto;
+  }
+}
+
+@media (max-width: 1150px) {
+  .image_movies {
+    width: 100%;
+  }
+  .tutotial_movies {
+    width: 90%;
+  }
+  .image_movies {
+    display: block;
+  }
+  .image_movies img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+  }
+}
