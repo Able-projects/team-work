@@ -1,8 +1,13 @@
 import React from "react"
 import Nav from "./Nav"
 import './main_movies.css'
+import { useHistory } from "react-router"
 
 export default function Main() {
+  const history = useHistory()
+  const changeRoute = (link) =>{
+    history.push(link)
+  }
   return (
     <div>
       <Nav />
@@ -12,7 +17,7 @@ export default function Main() {
       <div className="main_movies">
         <h2>Превью приложения Movie App</h2>
         <div className='image_movies'>
-          <img src='https://img.omdbapi.com/?i=tt2659374&apikey=49eb131b' alt='image_movie' />
+          <img src='https://img.omdbapi.com/?i=tt2659374&apikey=49eb131b' alt='image_movie' onClick={()=>changeRoute('/movie')} />
           <div className='tutotial_movies'>
             <h3>Хочешь найти любимый фильм, но забыл полное название?!</h3>
             <h4>Достаточно ввести слово из названия фильма.</h4>

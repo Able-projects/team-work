@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/weather" component={WeatherApp} />
         <Route exact path="/calculator" component={Calculator} />
         <Route exact path={"/movie"} component={MovieApp} />
-        <Route path={"/movie/:id"} component={MoviePage} />
+        <Route path={"/movie/:mid"} component={MoviePage} />
       </Switch>
     </BrowserRouter>
   )
