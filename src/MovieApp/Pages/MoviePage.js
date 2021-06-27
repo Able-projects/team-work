@@ -51,7 +51,7 @@ const MoviePage = (props) => {
     const [plot, usePlot] = useState()
 
     // const url = 'https://www.omdbapi.com/?i=tt2659374&apikey=49eb131b'
-    const id = props.match.params.id
+    const id = props.match.params.mid
 
     const Card = async () => {
 
