@@ -27,7 +27,7 @@ function Calculator() {
         <div>
             <Nav />
             <div className="container_calculator">
-                <div className="item input">
+                <div className=" input">
                     <form name="form">
                         <input type="text" name="textview" readonly />
                     </form>

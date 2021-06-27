@@ -25,16 +25,18 @@ function TodoApp() {
   console.log(inputText)
   console.log(array)
   return (
-    <div className="todoApp">
+    <>
       <Nav />
-      <h2>Plan list</h2>
-      <InputSection inputText={inputText} setInputText={setInputText} addToArray={addToArray} />
-      {array.map((e, key) => (
-        <ListItems item={e} cleanList={cleanList} key={key} />
-      ))}
+        <div className="todoApp">
+          <h2>Plan list</h2>
+          <InputSection inputText={inputText} setInputText={setInputText} addToArray={addToArray} />
+          {array.map((e, key) => (
+            <ListItems item={e} cleanList={cleanList} key={key} />
+          ))}
 
-      <div className="item">Items: {array.length}</div>
-    </div>
+          <div className="item">Items: {array.length}</div>
+        </div>
+    </>
   )
 }
 
