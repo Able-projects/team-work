@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
-.toApp {
+.todoApp {
+  margin-left: 40%;
+}
+.inputSection .toApp {
   text-align: center;
   margin: 10px auto;
   width: 400px;
@@ -11,7 +13,7 @@
   /* background-color: rgb(217, 211, 240); */
 }
 
-.inputSection {
+.inputSection .inputSection {
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -20,7 +22,7 @@
   position: relative;
 }
 
-.todoApp input {
+.inputSection input {
   margin-top: 20px;
   width: 320px;
   height: 20px;
@@ -31,7 +33,7 @@
   font-size: 16px;
 }
 
-.inputSection button {
+.inputSection .inputSection button {
   cursor: pointer;
   position: absolute;
   bottom: 10px;
@@ -47,7 +49,7 @@
   background-color: white;
 }
 
-.listItem {
+.inputSection .listItem {
   background-color: #008cff;
   color: white;
   font-size: 16px;
@@ -61,7 +63,7 @@
   border-radius: 5px;
 }
 
-.btnRemove {
+.inputSection .btnRemove {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,11 +78,11 @@
   color: black;
 }
 
-.todoApp h2 {
+.inputSection h2 {
   font-weight: 400;
 }
 
-.item {
+.inputSection .item {
   width: 82%;
   margin: 10px auto;
   text-align: right;
